@@ -551,16 +551,6 @@
         <div class="contact-form">
             
             <form action="send_message.php" method="POST">
-            <div class="form-response">
-              <?php
-                if (isset($_GET['status']) && $_GET['status'] == 'success') {
-                  echo "<p class='success'>Message sent successfully.</p>";
-                } elseif (isset($_GET['status']) && $_GET['status'] == 'error') {
-                  echo "<p class='error'>Failed to send the message. Try again later.</p>";
-                }
-              ?>
-            </div>
-
               <div class="row">
                 <div class="w-50">
                   <div class="input-group">
